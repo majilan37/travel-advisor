@@ -29,7 +29,7 @@ function Autocomplete() {
   };
   return isLoaded ? (
     <GoogleAutocomplete
-      className="mx-auto"
+      className="mx-auto sm:m-0"
       onLoad={onLoad}
       onPlaceChanged={onPlaceChanged}>
       <div className="relative flex w-full gap-2 md:w-max">
