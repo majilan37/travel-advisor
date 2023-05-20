@@ -19,11 +19,7 @@ function Map({
   setChild: React.Dispatch<React.SetStateAction<any>>;
 }) {
   return (
-    <div
-      style={{
-        height: "calc(100vh - 65.6px)",
-      }}
-      className=" w-full flex-1 ">
+    <div className=" w-full col-span-2 order-1 h-96 lg:h-[calc(100vh-77.6px)] lg:order-2 px-2">
       <GoogleMap
         bootstrapURLKeys={{
           key: process.env.NEXT_PUBLIC_GOOGLE_MAPS_KEY || "",

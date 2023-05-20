@@ -4,7 +4,7 @@ import { Suspense } from "react";
 
 export default function Home() {
   return (
-    <main className="">
+    <main className="min-h-screen">
       <Header />
       <Suspense fallback={<>Loading...</>}>
         {/* @ts-ignore */}

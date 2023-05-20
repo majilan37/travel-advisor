@@ -55,15 +55,11 @@ function List({
   }, [child, length]);
 
   return (
-    <div
-      style={{
-        height: "calc(100vh - 65.6px)",
-      }}
-      className="p-5 max-w-md flex flex-col">
+    <div className="p-5 max-w-md flex flex-col h-96 lg:h-[calc(100vh-77.6px)] order-2 lg:order-1 ">
       <h2 className="text-2xl font-medium">
         Restaurants, Hotels & Attractions <br /> around you
       </h2>
-      <div className="flex gap-3 mt-2">
+      <div className="flex flex-col lg:flex-row gap-3 mt-2">
         <Select
           value={type}
           onChange={(e) => setType(e as Type)}

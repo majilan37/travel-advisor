@@ -28,7 +28,10 @@ function Autocomplete() {
     setCoords({ lat, lng });
   };
   return isLoaded ? (
-    <GoogleAutocomplete onLoad={onLoad} onPlaceChanged={onPlaceChanged}>
+    <GoogleAutocomplete
+      className="mx-auto"
+      onLoad={onLoad}
+      onPlaceChanged={onPlaceChanged}>
       <div className="relative flex w-full gap-2 md:w-max">
         <Input
           type="text"

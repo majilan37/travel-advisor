@@ -5,7 +5,7 @@ import Autocomplete from "./Autocomplete";
 
 function Header() {
   return (
-    <Navbar className="mx-auto max-w-screen-xl px-4 py-3">
+    <Navbar className="mx-auto max-w-screen-xl px-4 py-3 mb-3">
       <div className="flex flex-wrap items-center justify-between gap-y-4 text-blue-gray-900">
         <Typography
           as="a"

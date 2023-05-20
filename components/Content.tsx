@@ -37,10 +37,10 @@ function Content() {
   const [child, setChild] = useState<number | null>(null);
 
   const params = new URLSearchParams({
-    bl_latitude: bounds?.sw.lat.toString() || "",
-    tr_latitude: bounds?.ne.lat.toString() || "",
-    bl_longitude: bounds?.sw.lng.toString() || "",
-    tr_longitude: bounds?.ne.lng.toString() || "",
+    bl_latitude: bounds?.sw.lat?.toString() || "",
+    tr_latitude: bounds?.ne.lat?.toString() || "",
+    bl_longitude: bounds?.sw.lng?.toString() || "",
+    tr_longitude: bounds?.ne.lng?.toString() || "",
   });
 
   // * Get the user's location
@@ -60,7 +60,7 @@ function Content() {
   }, [loading]);
 
   return (
-    <div className="flex">
+    <div className="grid lg:flex">
       <List
         data={data?.data}
         loading={loading}
